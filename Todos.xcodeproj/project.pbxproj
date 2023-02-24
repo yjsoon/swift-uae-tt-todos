@@ -13,6 +13,7 @@
 		AF6A870629A88CF30014AC7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6A870529A88CF30014AC7A /* Preview Assets.xcassets */; };
 		AF6A870D29A88D980014AC7A /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A870C29A88D980014AC7A /* Todo.swift */; };
 		AF6A870F29A895330014AC7A /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A870E29A895330014AC7A /* TodoDetailView.swift */; };
+		AF6A871129A89DDD0014AC7A /* NewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A871029A89DDD0014AC7A /* NewTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AF6A870529A88CF30014AC7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF6A870C29A88D980014AC7A /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		AF6A870E29A895330014AC7A /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
+		AF6A871029A89DDD0014AC7A /* NewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				AF6A86FE29A88CEF0014AC7A /* TodosApp.swift */,
 				AF6A870029A88CEF0014AC7A /* ContentView.swift */,
+				AF6A871029A89DDD0014AC7A /* NewTodoView.swift */,
 				AF6A870229A88CF30014AC7A /* Assets.xcassets */,
 				AF6A870429A88CF30014AC7A /* Preview Content */,
 				AF6A870C29A88D980014AC7A /* Todo.swift */,
@@ -146,6 +149,7 @@
 				AF6A870129A88CEF0014AC7A /* ContentView.swift in Sources */,
 				AF6A870D29A88D980014AC7A /* Todo.swift in Sources */,
 				AF6A86FF29A88CEF0014AC7A /* TodosApp.swift in Sources */,
+				AF6A871129A89DDD0014AC7A /* NewTodoView.swift in Sources */,
 				AF6A870F29A895330014AC7A /* TodoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
