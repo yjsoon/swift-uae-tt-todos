@@ -20,11 +20,8 @@ struct ContentView: View {
             List($todos) { $todo in
                 
                 NavigationLink {
-                    
                     TodoDetailView(todo: $todo)
-                    
                 } label: {
-                    
                     HStack {
                         Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
                             .onTapGesture {
@@ -40,7 +37,6 @@ struct ContentView: View {
                             }
                         }
                     }
-                    
                 }
             }
             .navigationTitle("Todos")

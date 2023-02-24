@@ -23,6 +23,6 @@ struct TodoDetailView: View {
 
 struct TodoDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoDetailView(todo: .constant(Todo(title: "Fake demo todo")))
+        TodoDetailView(todo: .constant(Todo(title: "Fake todo")) )
     }
 }
