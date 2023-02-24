@@ -10,6 +10,8 @@ import SwiftUI
 struct NewTodoView: View {
     @State var todoTitle = ""
     @State var todoSubtitle = ""
+    @Binding var todos: [Todo]
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         Form {
@@ -21,10 +23,12 @@ struct NewTodoView: View {
             
             Section("Actions") {
                 Button("Save") {
-                    // TODO: Implement this
+                    let newTodo = Todo(title: todoTitle, subtitle: todoSubtitle)
+                    todos.append(newTodo)
+                    dismiss()
                 }
                 Button("Cancel", role: .destructive) {
-                    // TODO: Implement this
+                    dismiss()
                 }
             }
             
@@ -34,6 +38,6 @@ struct NewTodoView: View {
 
 struct NewTodoView_Previews: PreviewProvider {
     static var previews: some View {
-        NewTodoView()
+        NewTodoView(todos: .constant([]))
     }
 }
