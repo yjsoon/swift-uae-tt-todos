@@ -14,6 +14,7 @@ struct ContentView: View {
         Todo(title: "Pick up son from school"),
         Todo(title: "Prepare for class", isCompleted: true)
     ]
+    @State var showAddSheet = false
     
     var body: some View {
         NavigationStack {
@@ -43,6 +44,16 @@ struct ContentView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showAddSheet = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .sheet(isPresented: $showAddSheet) {
+                NewTodoView()
             }
         }
     }
