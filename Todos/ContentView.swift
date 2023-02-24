@@ -17,8 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List($todos) { $todo in
-                
+            List($todos, editActions: [.all]) { $todo in
                 NavigationLink {
                     TodoDetailView(todo: $todo)
                 } label: {
