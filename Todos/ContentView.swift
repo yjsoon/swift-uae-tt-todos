@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var todos = [
-        Todo(title: "Buy some groceries"),
+        Todo(title: "Buy some groceries", subtitle: "Vegetables and corn"),
         Todo(title: "Pick up son from school"),
         Todo(title: "Prepare for class", isCompleted: true)
     ]
@@ -23,8 +23,15 @@ struct ContentView: View {
                         .onTapGesture {
                             todo.isCompleted.toggle()
                         }
-                    Text(todo.title)
-                        .strikethrough(todo.isCompleted)
+                    VStack(alignment: .leading) {
+                        Text(todo.title)
+                            .strikethrough(todo.isCompleted)
+                        if !todo.subtitle.isEmpty {
+                            Text(todo.subtitle)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                    }
                 }
             }
             .navigationTitle("Todos")
