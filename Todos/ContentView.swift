@@ -21,7 +21,7 @@ struct ContentView: View {
                 
                 NavigationLink {
                     
-                    TodoDetailView()
+                    TodoDetailView(todo: $todo)
                     
                 } label: {
                     

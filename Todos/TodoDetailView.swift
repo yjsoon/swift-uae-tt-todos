@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TodoDetailView: View {
     
-    @State var todo = Todo(title: "Feed the demo cat")
+    @Binding var todo: Todo
     
     var body: some View {
         Form {
@@ -23,6 +23,6 @@ struct TodoDetailView: View {
 
 struct TodoDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoDetailView()
+        TodoDetailView(todo: .constant(Todo(title: "Fake demo todo")))
     }
 }
