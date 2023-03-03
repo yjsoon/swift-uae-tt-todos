@@ -13,9 +13,10 @@ struct MainTodoListView: View {
     
     var body: some View {
         NavigationStack {
-            List($todoManager.todos, editActions: [.all]) { $todo in
+            List(todoManager.todosFiltered, editActions: [.all]) { $todo in
                 TodoRowView(todo: $todo)
             }
+            .searchable(text: $todoManager.searchTerm)
             .navigationTitle("Todos")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {

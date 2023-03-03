@@ -15,8 +15,27 @@ class TodoManager: ObservableObject {
         }
     }
     
+    @Published var searchTerm = ""
+    
     var numTodosLeft: Int {
         todos.filter { !$0.isCompleted }.count
+    }
+    
+    var todosFiltered: Binding<[Todo]> {
+        Binding(
+            get: {
+                if self.searchTerm.isEmpty {
+                    return self.todos
+                }
+                
+                return self.todos.filter {
+                    $0.title.lowercased().contains(self.searchTerm.lowercased())
+                }
+            },
+            set: {
+                self.todos = $0
+            }
+        )
     }
         
     init() {
