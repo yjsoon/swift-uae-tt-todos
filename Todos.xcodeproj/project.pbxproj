@@ -57,13 +57,11 @@
 		AF6A86FD29A88CEF0014AC7A /* Todos */ = {
 			isa = PBXGroup;
 			children = (
-				AF6A86FE29A88CEF0014AC7A /* TodosApp.swift */,
-				AF6A870029A88CEF0014AC7A /* ContentView.swift */,
-				AF6A871029A89DDD0014AC7A /* NewTodoView.swift */,
+				AFE5BE8729B1CB4700931B14 /* Model and ViewModel */,
+				AFE5BE8629B1CB3700931B14 /* Views */,
 				AF6A870229A88CF30014AC7A /* Assets.xcassets */,
+				AF6A86FE29A88CEF0014AC7A /* TodosApp.swift */,
 				AF6A870429A88CF30014AC7A /* Preview Content */,
-				AF6A870C29A88D980014AC7A /* Todo.swift */,
-				AF6A870E29A895330014AC7A /* TodoDetailView.swift */,
 			);
 			path = Todos;
 			sourceTree = "<group>";
@@ -74,6 +72,24 @@
 				AF6A870529A88CF30014AC7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFE5BE8629B1CB3700931B14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF6A870029A88CEF0014AC7A /* ContentView.swift */,
+				AF6A871029A89DDD0014AC7A /* NewTodoView.swift */,
+				AF6A870E29A895330014AC7A /* TodoDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFE5BE8729B1CB4700931B14 /* Model and ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF6A870C29A88D980014AC7A /* Todo.swift */,
+			);
+			path = "Model and ViewModel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
