@@ -19,26 +19,8 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List($todos, editActions: [.all]) { $todo in
-                    NavigationLink {
-                        TodoDetailView(todo: $todo)
-                    } label: {
-                        HStack {
-                            Image(systemName: todo.isCompleted ? "checkmark.circle.fill" : "circle")
-                                .onTapGesture {
-                                    todo.isCompleted.toggle()
-                                }
-                            VStack(alignment: .leading) {
-                                Text(todo.title)
-                                    .strikethrough(todo.isCompleted)
-                                if !todo.subtitle.isEmpty {
-                                    Text(todo.subtitle)
-                                        .font(.subheadline)
-                                        .foregroundColor(.gray)
-                                }
-                            }
-                        }
-                    }
-                }
+                TodoRowView(todo: $todo)
+            }
             .navigationTitle("Todos")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
