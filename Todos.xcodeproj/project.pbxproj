@@ -95,8 +95,8 @@
 		AFE5BE8729B1CB4700931B14 /* Model and ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AF6A870C29A88D980014AC7A /* Todo.swift */,
 				AFE5BE8A29B1CE6100931B14 /* TodoManager.swift */,
+				AF6A870C29A88D980014AC7A /* Todo.swift */,
 			);
 			path = "Model and ViewModel";
 			sourceTree = "<group>";

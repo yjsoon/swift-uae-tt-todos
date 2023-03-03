@@ -14,6 +14,10 @@ class TodoManager: ObservableObject {
             save()
         }
     }
+    
+    var numTodosLeft: Int {
+        todos.filter { !$0.isCompleted }.count
+    }
         
     init() {
         load()

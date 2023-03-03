@@ -19,7 +19,7 @@ struct ContentView: View {
                     Label("Todos", systemImage: "checkmark.circle.fill")
                 }
             
-            HowManyMoreView()
+            HowManyMoreView(todoManager: todoManager)
                 .tabItem {
                     Label("Number left", systemImage: "number.circle.fill")
                 }
